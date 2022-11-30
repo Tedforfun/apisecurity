@@ -32,7 +32,7 @@ Conduct test in Powershell
 4. Run the application or service in docker
 5. Run test plan in Powershell  
 * Install and update the Levo CLI
-Function Launch_Levo {docker run --rm -v ${HOME}/.config/configstore:/home/levo/.config/configstore:rw -v ${pwd}:/home/levo/work:rw -e TERM=xterm-256color -ti levoai/levo:stable $args} 
+Function Launch_Levo {docker run --rm -v ${HOME}/.config/configstore:/home/levo/.config/configstore:rw -v ${pwd}:/home/levo/work:rw -e TERM=xterm-256color -ti levoai/levo:stable $args} 
 Set-Alias -Name levo -Value Launch_Levo
 docker pull levoai/levo:stable
 * Login Levo
