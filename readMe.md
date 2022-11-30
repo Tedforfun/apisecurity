@@ -22,7 +22,7 @@ Conduct test in Powershell
 1. Register and login Levo account
 2. API Catelog
 * Click import new schema
-* Choose type, application or servvice
+* Choose testing type, application or servvice
 * Upload the project OpenAPI specification file at Levo 
 3. Test Plan
 * Data driven testing
@@ -32,7 +32,11 @@ Conduct test in Powershell
 4. Run the application or service in docker
 5. Run test plan in Powershell  
 * Install and update the Levo CLI
+a) Function Launch_Levo {docker run --rm -v ${HOME}/.config/configstore:/home/levo/.config/configstore:rw -v  ${pwd}:/home/levo/work:rw -e TERM=xterm-256color -ti levoai/levo:stable $args} 
+b) Set-Alias -Name levo -Value Launch_Levo
+c) docker pull levoai/levo:stable
 * Login Levo
+levo login
 * Run test command
 * Wait for test results
 6. Detailed Test results
