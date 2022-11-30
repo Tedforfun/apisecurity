@@ -5,7 +5,7 @@ Getting Started
 ---
 
 Prerequisites
-* Windows 10 x64
+* Windows 10 x64 19H2 or above
 * JDK / JRE
 * Maven
 * IDE
@@ -41,7 +41,8 @@ Conduct test in Powershell
 
 
 Authors
-
+---
 
 
 License
+---
